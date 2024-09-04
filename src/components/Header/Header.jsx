@@ -25,7 +25,7 @@ const Header = () => {
                     />
                     <FaSearch className='absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-700' />
                 </div>
-                <CgProfile className='text-red-400 text-2xl md:text-3xl' />
+                <CgProfile className='text-red-400 text-2xl md:text-3xl cursor-pointer' />
             </div>
         </nav>
     );
