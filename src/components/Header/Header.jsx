@@ -4,12 +4,12 @@ import { CgProfile } from 'react-icons/cg';
 
 const Header = () => {
     return (
-        <nav className='flex flex-col md:flex-row justify-between items-center p-4'>
+        <nav className='flex flex-col md:flex-row justify-between items-center p-4 border-b-2 border-red-300'>
             <h1 className='text-2xl md:text-4xl font-bold mb-4 md:mb-0'>
                 <span className='text-red-500'>TASTE</span>NEST
             </h1>
 
-            <div className='flex flex-col md:flex-row list-none gap-4 md:gap-8 text-sm md:text-lg items-center justify-center'>
+            <div className='flex flex-col md:flex-row list-none gap-4 md:gap-8 text-base md:text-lg items-center justify-center'>
                 <a className='hover:bg-red-500 rounded-lg p-2' href="#Home">Home</a>
                 <a className='hover:bg-red-500 rounded-lg p-2' href="#Recipe">Recipe</a>
                 <a className='hover:bg-red-500 rounded-lg p-2' href="#About">About</a>
