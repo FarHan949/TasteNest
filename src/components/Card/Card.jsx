@@ -11,8 +11,8 @@ const  {recipe_image, recipe_name, short_description, ingredients, preparing_tim
         <div className='mt-4 my-10 border-2 shadow-2xl rounded-2xl'>
             <div className='flex flex-col items-center border-b-2 gap-4'>
                 <img className='w-52 p-2 rounded-2xl' src={recipe_image} alt="" />
-                <h1 className='text-2xl font-bold'>{recipe_name}</h1>
-                <p className='text-sm'>{short_description}</p>
+                <h1 className='text-2xl font-bold px-2'>{recipe_name}</h1>
+                <p className='text-sm px-2'>{short_description}</p>
             </div>
 
             {/* <div className='mt-4'>

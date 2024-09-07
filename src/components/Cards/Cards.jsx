@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../Card/Card';
 import { useEffect, useState } from 'react'
-import Box from '../Box/Box';
+import Boxs from '../Boxs/Boxs';
 
 
 const Cards = () => {
@@ -32,8 +32,8 @@ const Cards = () => {
                   repellat consectetur, nemo ullam. Deserunt quasi necessitatibus quia porro?
                 </p>
             </div>
-            <div className='flex w-4/6 gap-8'>
-                <div className='grid grid-cols-2 gap-4 mt-24'>
+            <div className='flex w-10/12 gap-8 mt-20'>
+                <div className='grid grid-cols-2 gap-4'>
                 {
                     cards.map(card => <Card key={card.recipe_id}
                     card={card}
@@ -41,8 +41,8 @@ const Cards = () => {
                 }
                </div>
 
-                 <div className='mt-24'>
-                 <Box boxs={boxs}></Box>
+                 <div className='w-8/12 mt-4'>
+                 <Boxs boxs={boxs}></Boxs>
                  </div>
             </div>
         </div>
