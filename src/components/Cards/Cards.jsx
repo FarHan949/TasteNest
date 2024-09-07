@@ -10,10 +10,17 @@ const Cards = () => {
     const [boxs , setBoxs] = useState([])
 
 
-    const handelToAddBox=(card)=>{
-      const newBox = [...boxs , card]
-      setBoxs(newBox)
-    }
+    const handelToAddBox=(food)=>{
+
+      const exists = boxs.find(fd => fd.recipe_id === food.recipe_id)
+      if(exists){
+        alert('Its item already exists')
+      }
+     else{
+       const newBox = [...boxs, food]
+       setBoxs(newBox)
+         }
+      }
 
 
     useEffect(()=>{
