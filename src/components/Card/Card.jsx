@@ -42,7 +42,7 @@ const  {recipe_image, recipe_name, short_description, ingredients, preparing_tim
                 </div>
             </div>
             <button onClick={()=> handelToAddBox(card)}
-             className='bg-red-500 px-4 py-2 rounded-2xl mt-8 text-xl hover:bg-red-700 font-bold mb-5'>Want to cook</button>
+             className='bg-red-500 px-4 py-2 text-white rounded-2xl mt-8 text-xl hover:bg-red-700 mb-5'>Want to cook</button>
         </div>
     );
 };

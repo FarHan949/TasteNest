@@ -8,6 +8,7 @@ const Cards = () => {
 
     const [cards, setCards] = useState([])
     const [boxs , setBoxs] = useState([])
+    const [preparing , setPreparing] = useState([])
 
 
     const handelToAddBox=(food)=>{
@@ -21,6 +22,25 @@ const Cards = () => {
        setBoxs(newBox)
          }
       }
+
+      const handlerToPreparingRemove = food =>{
+        const remove = boxs.filter( fd => fd.recipe_id !== food.recipe_id)
+        setBoxs(remove)
+      }
+
+
+
+     const handlerToPreparing = food =>{
+       const AddToPReparing = boxs.find(fd => fd.recipe_id === food.recipe_id)
+         if(AddToPReparing){
+             alert('already existed')
+           }
+           else{
+               const newPreparing = [...preparing, food]
+               setPreparing(newPreparing)
+             }
+           
+          } 
 
 
     useEffect(()=>{
@@ -49,7 +69,9 @@ const Cards = () => {
                </div>
 
                  <div className='w-8/12 mt-4'>
-                 <Boxs boxs={boxs}></Boxs>
+                 <Boxs handlerToPreparingRemove={handlerToPreparingRemove}
+                  boxs={boxs}
+                  ></Boxs>
                  </div>
             </div>
         </div>

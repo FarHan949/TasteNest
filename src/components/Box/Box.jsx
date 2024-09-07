@@ -56,7 +56,7 @@ import React from 'react';
 //   };
 
 
-const Box = ({ box }) => {
+const Box = ({ box , handlerToPreparingRemove}) => {
     const { recipe_name, preparing_time, calories } = box;
   
     return (
@@ -78,7 +78,8 @@ const Box = ({ box }) => {
   
           {/* Button */}
           <div className="col-span-3 flex justify-end mt-4">
-            <button className="px-4 py-2 bg-red-500 text-white rounded-lg shadow hover:bg-red-600 transition-colors duration-300">
+            <button onClick={()=>handlerToPreparingRemove(box)} 
+            className="px-4 py-2 bg-red-500  text-white rounded-lg shadow hover:bg-red-700 transition-colors duration-300">
               Preparing
             </button>
           </div>
