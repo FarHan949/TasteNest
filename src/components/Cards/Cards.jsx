@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 import { useEffect, useState } from 'react'
 import Boxs from '../Boxs/Boxs';
+import {toast} from 'react-toastify';
 
 
 const Cards = () => {
@@ -15,7 +16,7 @@ const Cards = () => {
 
       const exists = boxs.find(fd => fd.recipe_id === food.recipe_id)
       if(exists){
-        alert('Its item already exists')
+        toast.error("Already Selected")
       }
      else{
        const newBox = [...boxs, food]
@@ -41,6 +42,29 @@ const Cards = () => {
              }
            
           } 
+
+
+const togglePreparing = (food) => {
+  const isInPreparing = preparing.find((fd) => fd.recipe_id === food.recipe_id);
+
+  if (isInPreparing) {
+    // Remove from preparing if it already exists
+    const updatedPreparing = preparing.filter((fd) => fd.recipe_id !== food.recipe_id);
+    setPreparing(updatedPreparing);
+
+    // Also remove from boxs
+    const updatedBoxs = boxs.filter((fd) => fd.recipe_id !== food.recipe_id);
+    setBoxs(updatedBoxs);
+  } else {
+    // Add to preparing if it doesn't exist
+    const newPreparing = [...preparing, food];
+    setPreparing(newPreparing);
+
+    // Optional: If you also want to add it to boxs, you can do it here:
+    setBoxs([...boxs, food]);
+  }
+};
+
 
 
     useEffect(()=>{
@@ -70,6 +94,7 @@ const Cards = () => {
 
                  <div className='w-8/12 mt-4'>
                  <Boxs handlerToPreparingRemove={handlerToPreparingRemove}
+                 togglePreparing={togglePreparing}
                   boxs={boxs}
                   ></Boxs>
                  </div>
