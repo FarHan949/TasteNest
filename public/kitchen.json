@@ -2,7 +2,7 @@
     {
       "recipe_id": "001",
       "recipe_name": "Grilled Chicken with Basil",
-      "recipe_image": "../src/assets/img/Grilled Chicken with Basil.jpg",
+      "recipe_image": "https://i.ibb.co.com/41sF2kj/Grilled-Chicken-with-Basil.jpg",
       "short_description": "A delicious and healthy grilled chicken dish with fresh basil and mushrooms.",
       "ingredients": [
         "550 g chicken",
@@ -16,7 +16,7 @@
     {
       "recipe_id": "002",
       "recipe_name": "Spaghetti Carbonara",
-      "recipe_image": "../src/assets/img/Spaghetti Carbonara.jpg",
+      "recipe_image": "https://i.ibb.co.com/Tg60Wrn/Spaghetti-Carbonara.jpg",
       "short_description": "Classic Italian pasta dish with creamy egg sauce and pancetta.",
       "ingredients": [
         "200 g spaghetti",
@@ -30,7 +30,7 @@
     {
       "recipe_id": "003",
       "recipe_name": "Vegetable Stir Fry",
-      "recipe_image": "../src/assets/img/Vegetable Stir Fry.jpg",
+      "recipe_image": "https://i.ibb.co.com/Wk7jhqH/Vegetable-Stir-Fry.jpg",
       "short_description": "A quick and healthy stir-fry with mixed vegetables and tofu.",
       "ingredients": [
         "200 g tofu",
@@ -44,7 +44,7 @@
     {
       "recipe_id": "004",
       "recipe_name": "Beef Tacos",
-      "recipe_image": "../src/assets/img/Beef Tacos.jpg",
+      "recipe_image": "https://i.ibb.co.com/kDr9pnm/Beef-Tacos.jpg",
       "short_description": "Tasty beef tacos with fresh salsa and guacamole.",
       "ingredients": [
         "300 g ground beef",
@@ -58,7 +58,7 @@
     {
       "recipe_id": "005",
       "recipe_name": "Margarita Pizza",
-      "recipe_image": "../src/assets/img/Margarita Pizza.jpg",
+      "recipe_image": "https://i.ibb.co.com/0mBnKvk/Margarita-Pizza.jpg",
       "short_description": "Classic margarita pizza with tomato, mozzarella, and basil.",
       "ingredients": [
         "200 g pizza dough",
@@ -72,7 +72,7 @@
     {
       "recipe_id": "006",
       "recipe_name": "Chocolate Chip Cookies",
-      "recipe_image": "../src/assets/img/Chocolate Chip Cookies.jpg",
+      "recipe_image": "https://i.ibb.co.com/KhDjVWd/Chocolate-Chip-Cookies.jpg",
       "short_description": "Crispy on the outside, chewy on the inside chocolate chip cookies.",
       "ingredients": [
         "200 g flour",
